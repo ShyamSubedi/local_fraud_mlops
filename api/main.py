@@ -14,7 +14,7 @@ SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJ
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # ✅ Load model
-MODEL_PATH = "models/fraud_model_v2.pkl"
+MODEL_PATH = "models/fraud_detection_xgboost.pkl"
 try:
     with open(MODEL_PATH, "rb") as file:
         model = joblib.load(file)
