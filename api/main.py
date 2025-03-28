@@ -1,3 +1,4 @@
+print("✨ CD Test: GitHub manual commit")
 from fastapi import FastAPI, HTTPException
 import uvicorn
 import pandas as pd
